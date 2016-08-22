@@ -1,0 +1,434 @@
+CHANGES
+=======
+
+* make ios test more stable
+* fix utf7ime install
+* add click_image( safe = True), also update report
+* little modify
+* finish ios install, some ios bug fix
+* watch activity on android (lame way..)
+* basic events recorder
+* union touchups/moves/downs
+* add ios documentation
+* add timeout for queue post
+* fix typo
+* fix ios taskqueue, support nowait support
+* use unix socket instead of port listen, because ios test can only run on mac
+* generate draft from saved record frames
+* support iphone6p and iphone5c
+
+1.0.12
+------
+
+* fix all license
+* update document
+* fix dir
+* remove uesless comment
+* update license from mit to apache2
+* fix taskqueue get timeout
+* use task.queue instead of pipe
+* finish atx.taskqueue
+* refator record using addon-components
+* remove adb2.py & device/android_minicap.py, add mixins for adbkit
+* update web all use local js source in order to speed up browser load
+* update doc
+* add command python -matx info
+* python -m atx gui add iOS support
+* remember last save path for tkgui, close #35
+* update opencv of qiniu address
+* remove adb.py deps
+* close #34
+* fix rotation, close #33
+* add start app support
+* little fix
+* add timeout
+* remove uesless code
+* refactoring. record screen + ui-hierarchy + user-input
+* change layout for later analyze
+* init ios click function
+* fix type when wait_response returns None
+* update desc
+* add ios device for connect
+* add ios automation doc
+* ios support prepare script
+* add gitter-travis integration
+* fix spell error
+* update doc of report
+* add google analytics for report, fix d.serial return None bug, change report js to jsdeliver cdn
+* remove useless files again
+* remove useless files
+* report add two api, info, error
+* use flask ext method to extend atx ext
+* update report.py but not yet tested, maybe caught something wrong
+* fix gt
+* click_image support long_click, close #29
+* finish part of taskqueue
+* update title
+* follow DESIGN.md to finish taskqueue
+* update name
+* fix adbkit devices() bug, remove adb.py dependency from android.py
+* remove useless print
+* update doc
+* fix forward, add performance collect use tencentGT
+* add clean after minicap capture and some other correct
+* fix ATX_ADB_HOST not working bug
+* add a remote input gui
+* add missing file
+* update logo
+* initialize eventhooks
+* add placeholder to avoid memeory leak
+* fix keycodes on windows
+* remove popo
+* add discuss group to readme
+* fix #27
+* add more functions
+* fix agent broken pipe
+* ios screenshot add rotate support
+* close #22
+* add ios screencap support
+* add openstf service
+* add logo
+* update watch function
+* update watch document
+* add screenshot method to ioskit
+* add packages function
+* add python -matx version, close #25
+* add uninstall command to adbkit, also with lot of comment
+
+1.0.11
+------
+
+* adbkit add minicap support
+* update docs
+* add screencap to adbkit
+* update docs
+* add gitter.im support
+* install minitouch along with minicap
+* fix connect multi device, display return wrong
+* prepare screencap
+* remove useless code
+* filename now can contains screen size, close #12
+* update deps
+* add screencap command
+* initial adbkit python wrap
+* make arg parser beautiful
+* fix minicap params on SDK<=16
+* fix rotationwatcher startup for SumSung GT-I9268
+* add STFService.apk for stf support
+* add a lame get_shell function to spare subprocess creation cost
+* rename screen window
+* add controls to screen command
+* add draft
+* add blueprint
+* fix RotationWatcher.apk file path
+* remove useless code again
+* remove useless code
+* fix PIL import error
+* add click_image hook, also finish atx report
+* add threshold support
+* watch add raise_errors
+* add web trigger
+* report generate json also
+* fix try catch
+* add screen/screenrecord commands
+* summarize all adb related functions to adb2.py
+* add surfaceflinger which collect fps in a non root way
+* release new tag
+
+1.0.10
+------
+
+* update doc, add taskqueue for ios
+* add report for atx
+* add atx.yml runner
+* add more hook_wrap
+* move dep to their own
+* use numpy version on pypi
+* catch subprocess.CalledError and use new watch instead of old one
+* use atx-uiautomator instead uiautomator
+* use vue to toggle landscape
+* more good structured web page
+* fix touch position according to screen orientation
+* add random contour monkey. use random contour rect
+* add bruteforce monkey
+* add start app after install
+* merge type code, forgot when edited
+* add monkey, even through not very stable
+* save template mask
+* rename device_mixin to mixin
+* add keyevent api, type support space
+* fix errors found by pyflakes
+* add scene detector
+
+1.0.9
+-----
+
+* update change log
+* add ios utils
+* update requirements
+* change some method of adb to static
+* make python -matx install some.apk support multi device
+* fix progress
+* install use tqdm as progress bar
+* move image test functions in test_android to test_monkey
+* move RotationWatcher.apk to vendor
+* add monkey test
+* add doc about install
+* add apk install support
+* add timeout events
+* add guesture recognize structure
+* let search search image support insteresting
+* fix click_image not support Pattern(offset) error, and add relevant tests
+* sort ui blocks by bounds area
+* add record to commands: python -matx record
+* add ui hook demo. may be used in record
+* add minitouch input
+* update qiniucdn address
+* add minicap device used for record
+* check download response code should be 200
+* handle android input events
+* add python -matx iosdeveloper support. close #13
+* add for remember
+* add click image support, close #10
+* update badge
+
+1.0.8
+-----
+
+* close #11, check adb device status, raise EnvironmentError in atx.connect if something went wrong
+* support connect through env-var, close #11
+* add ext
+* add android recorder structure
+* modify name
+* merge from ssx
+* split record to sub package
+* add new favicon, close #7
+* finish part of add_listener, add cloudtest log support
+* merge sxx
+* add refresh button to web ide
+* merge from ssx
+* merge from ssx
+* add recorder runner
+* add strutils.py in order to fix zh-simple encoding
+* use self defined logging module instead of standlib logging
+* merge code in company
+* add save screen button
+* prepare two position for console
+* add how to design images and code storage to todo.md
+* support stop run in browser
+* add mouse move detect, change save debug code to no debug code
+* change to python auto close blockly
+* use canvas to show screen
+* rename AirtestX to AuTo eXpress
+* rename project
+* generate py scripts
+* handle touch event, find clicked object
+* windows add screen_cv2 & make window foreground before capturing
+*  windows capture entire screen to avoid failing on opengl programs
+* redirect output to webide
+* use images before & after the click to find out the step
+* handle touch input in background
+* merge sxx
+* recorder capture image in background
+* add screen in webide
+* record api change & merge sxx
+* use ctypes instead of win32ui for screenshot
+* add debug step by step support
+* add simple python intepreter: python -matx run <filename>
+* add websocket for atx webide
+* add image_search variable and properties for android
+* fix win32ui+tk.mainloop hangup
+* add record command
+* add record command
+* add get properties for android
+* merge ssx
+
+1.0.7
+-----
+
+* add it inorder to pass
+* add WatchItem
+* update changelog
+* resolution add assert check
+* update documentation
+* add update generate
+* record test
+* support save workspace
+* add atx auto code converter
+* update args ... match sphinx
+* mock win32 modules
+* update doc
+* add feature title
+* fix chinese encode error on webide
+* merge wxx
+* fix image in chinese path
+* add search_path to DeviceMixin, change SyntaxError to TypeError
+* fix merge error & relocate windows device
+* merge from ssx
+* move all platform device to directory device
+* fix closure error
+* add dummy device for test
+* update todo for tomorrow
+* add windows device support
+* show images on the left
+* remove adb code, add python -matx apkparse support
+* add click doc
+* add region support
+* use screen if no window_name nor exe_file given
+* update doc
+* remove useless code
+* move android code outof device.py
+* fix rename error
+* fix import error & change error name
+* add image list in the left
+* split android_code from atx.device.py
+* move touch to base class
+* add windows device api
+* add adb forward, add blockly to tornado web
+* use bootstrap to make atx webide beautiful
+* add google analytics code
+* update requirements
+* add python -matx webide
+* opencv install add win amd64 easy install method
+* add resolution for Pattern, close #3
+* depreciated sleep, use delay instead
+* move all cli command to direcotry cmds
+* fix instance bug
+* watch object add func:do
+* fix #1
+* update secure of travis
+
+1.0.6
+-----
+
+* Add desc how to install from source
+* better uidump tkgui support
+* UI detect update
+* support ui dump in ide, which looks very nice
+* add gui
+* make tkgui save kindly
+* add event listener
+* update readme example resolution
+* analysis all current screen size
+* fix gui run code bug
+* add parse ui node dump_nodes() function
+* update desc
+* add auto refresh support
+* add screenshot button and d
+* update change log
+
+1.0.5
+-----
+
+* update ide screen
+* add offset in Pattern, add screen_method_threshold and rotation config
+* fix spell
+* add todo
+* add offset support not tested
+* name change CommonWrap -> DeviceMixin
+* add desc how to install minicap to phone
+* add code generate insert code support
+* add simulator to play test
+* put refresh screen to a thread
+* change gui style
+
+1.0.4
+-----
+
+* fix tags
+* fix stupid bug
+* update license data
+* fix connect remote device
+* fix watch not click bug
+* add docs
+* mock some moduless
+* remove cv2 deps
+* add deps of cv2 and numpy
+* fix again
+* tr catch import for rth build ok
+* update doc on rtd
+* use click instead of touch
+* update doc about ide
+* finish the first tk ide
+* add rectangle
+* fix .
+* update gui
+* image funcs move to imutils.py
+* add imutils
+* fix bounds bug, and read_image bug
+* add conf SCREENSHOT_METHOD_AUTO
+* fix ide, but still now working in mac
+* connect remove args needed, add is_app_alive func and last_screenshot prop
+* update watch method, remove useless files
+* screenshot return value change to PIL.Image, remove useless code
+* remove log from base.py
+* update pypi badge
+* add pypi badge
+
+1.0.3
+-----
+
+* update watcher api
+* remove useless code
+* remove useless file
+* finish rebuild
+* update doc
+
+1.0.2
+-----
+
+* prepare to release
+* remove skip
+* add wlan_ip and some other methods
+* comment useless functions
+* fix connect remote device
+* remove useless code
+* match method
+* update badge
+* add watch timeout
+* add simple ide
+* fix readme
+
+1.0.1
+-----
+
+* fix ..
+* use atx name for airtestx
+* add watcher
+* add sleep
+* a simple ide was born
+* add minicap screenshot method support
+* trigger readthedocs to build
+* make some docs
+* update doc use sphinx
+* update link
+* add start and stop app support
+* add shell command
+* prepare to add a simple ide
+* ide ^_^
+* add a very simple ide
+* remove useless code
+* add simple ide
+* add version
+* auto convert md to rst
+* support multi publish
+* fix travis add distributions
+* fix travis again
+* remove aircv for now
+* update test requirements
+* fix again
+* fix travis yml
+* add travis
+* update travis
+* add pbr requirements
+* update dep again
+
+1.0.0
+-----
+
+* update readme again
+* fix typo
+* support touch_image
+* add touch_image prepare code
+* restructure code
+* initial commit

@@ -1,0 +1,13 @@
+aircv==1.4.4
+futures==3.0.5
+tornado==4.3
+maproxy==0.0.12
+subprocess32==3.2.7
+tqdm==4.5.0
+PyYAML==3.11
+numpy>=1.11.0
+Pillow>=2.7.0
+requests>=2.9.1
+facebook-wda==0.0.2
+atx-androguard==3.0
+atx-uiautomator==0.2.11.dev1
